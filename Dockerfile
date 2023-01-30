@@ -5,5 +5,5 @@ COPY package.json .
 COPY package-lock.json .
 RUN npm install
 COPY . .
-COPY index.ts /app/index.ts
+COPY index.ts .
 CMD ["/main.sh"]
