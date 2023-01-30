@@ -1,6 +1,6 @@
 FROM node:16-alpine
 
-RUN mkdir -p /github/workspace/ && chmod -R 777 /github/workspace/
+RUN npm install -g npm@9.4.0
 COPY package.json /package.json
 COPY package-lock.json /package-lock.json
 RUN npm install
