@@ -27,6 +27,7 @@ permissions:
   contents: write
   pull-requests: write
   metadata: write
+uses: cirolini/chatgpt-github-actions@v1
 jobs:
   CR:
-    uses: cirolini/chatgpt-github-actions@v1
+    
