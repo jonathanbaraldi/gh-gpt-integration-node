@@ -27,7 +27,4 @@ permissions:
   contents: write
   pull-requests: write
   metadata: write
-jobs:
-  CR:
-    runs-on: ubuntu-latest
-    uses: cirolini/chatgpt-github-actions@v1
+uses: cirolini/chatgpt-github-actions@v1
