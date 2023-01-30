@@ -25,7 +25,6 @@ name: Code Review with ChatGPT
 on:
   push:
     branches: ["*"]
-permissions: write-all
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
