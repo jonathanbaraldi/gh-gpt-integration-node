@@ -1,1 +1,1 @@
-tsx ./dist/index.mjs --openai_api_key=$1 --github_token=$2 --github_pr_id=$3
+node ./dist/index.js --openai_api_key=$1 --github_token=$2 --github_pr_id=$3
