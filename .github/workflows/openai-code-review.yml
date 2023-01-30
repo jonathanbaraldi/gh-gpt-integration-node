@@ -26,7 +26,7 @@ on:
   push:
     branches: ["*"]
 jobs:
-  CR:
+  CRv:
     runs-on: ubuntu-latest
     steps:
       - uses: cirolini/chatgpt-github-actions@v1
