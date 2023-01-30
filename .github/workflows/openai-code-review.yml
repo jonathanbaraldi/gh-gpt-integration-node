@@ -23,7 +23,11 @@
 
 name: Code Review with ChatGPT
   on: [push]
-  jobs:
-    CR:
-      runs-on: ubuntu-latest
-      uses: cirolini/chatgpt-github-actions@v1
+permissions:
+  contents: write
+  pull-requests: write
+  metadata: write
+jobs:
+  CR:
+    runs-on: ubuntu-latest
+    uses: cirolini/chatgpt-github-actions@v1
