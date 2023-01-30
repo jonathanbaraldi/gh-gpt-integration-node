@@ -8,7 +8,7 @@ jobs:
     name: ChatGTP explain code
     steps:
       - name: ChatGTP explains
-        uses: crnvl96/gh-gpt-integration-node@1.0.0
+        uses: crnvl96/gh-gpt-integration-node@1.0.1
         with:
           openai_api_key: ${{ secrets.openai_key }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
