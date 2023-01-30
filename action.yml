@@ -1,0 +1,23 @@
+# action.yml
+name: 'ChatGPT code review'
+description: 'Integration of github actions with ChatGPT, aiming automated code reviews'
+inputs:
+  openai_key:
+    description: 'OpenAI key'
+    required: true
+    default: ''
+  github_token:
+    description: 'Github token'
+    required: true
+    default: ''
+  github_pr_id:
+    description: 'Github PR ID'
+    required: true
+    default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.openai_key }}
+    - ${{ inputs.gh_token }}
+    - ${{ inputs.gh_pr_id }}
