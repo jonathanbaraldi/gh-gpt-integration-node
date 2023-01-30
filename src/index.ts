@@ -58,7 +58,7 @@ async function main() {
           owner,
           repo,
           issue_number: pull_number,
-          body: `${filename}: completion.data.choices[0].text`,
+          body: `${filename}: ${completion.data.choices[0].text}`,
         })
 
     })
