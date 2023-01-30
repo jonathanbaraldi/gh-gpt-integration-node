@@ -1,11 +1,10 @@
-name: Code Review with ChatGPT
 on:
   pull_request:
     types: [opened, synchronize]
 jobs:
-  hello_world_job:
+  code_review:
     runs-on: ubuntu-latest
-    name: ChatGTP explain code
+    name: AI code review
     steps:
       - name: ChatGTP explains
         uses: crnvl96/gh-gpt-integration-node@1.0.13

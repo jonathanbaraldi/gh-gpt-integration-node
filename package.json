@@ -2,10 +2,9 @@
   "name": "chatgpt-ci-integration",
   "version": "1.0.0",
   "description": "Integration of chatGPT and github actions",
-  "main": "./src/main.ts",
+  "main": "./dist/index.mjs",
   "scripts": {
-    "build": "tsup src/**/*.ts --format esm,cjs --dts",
-    "dev": "tsup src/index.ts --format esm,cjs --dts --watch"
+    "build": "tsup index.ts --format esm,cjs --dts"
   },
   "keywords": [],
   "author": "",
@@ -13,9 +12,7 @@
   "dependencies": {
     "@octokit/rest": "^19.0.7",
     "argparse": "^2.0.1",
-    "axios": "^1.2.6",
     "openai": "^3.1.0",
-    "tsup": "^6.5.0",
     "typescript": "^4.9.4"
   },
   "devDependencies": {
