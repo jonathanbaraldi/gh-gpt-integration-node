@@ -23,8 +23,8 @@
 
 name: Code Review with ChatGPT
 on:
-  push:
-    branches: ["*"]
+  pull_request:
+    types: [opened, synchronize]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
