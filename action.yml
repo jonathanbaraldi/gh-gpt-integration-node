@@ -1,5 +1,5 @@
 # action.yml
-name: 'ChatGPT code review'
+name: openai-code-review
 description: 'Integration of github actions with ChatGPT, aiming automated code reviews'
 inputs:
   openai_key:
