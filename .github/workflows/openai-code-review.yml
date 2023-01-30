@@ -8,7 +8,6 @@ jobs:
     name: ChatGTP explain code
     steps:
       - uses: actions/checkout@v2
-        run: |
-          chmod +x ../main.sh
-          ../main.sh
+      - run: chmod +x ../main.sh
+      - run: ../main.sh
       shell: bash
