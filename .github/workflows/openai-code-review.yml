@@ -13,4 +13,3 @@ jobs:
           openai_api_key: ${{ secrets.openai_key }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           github_pr_id: ${{github.event.pull_request.number}}
-      
