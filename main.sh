@@ -1,1 +1,1 @@
-tsx ./src/index.ts --openai_key=$1 --gh_token=$2 --gh_pr_id=$3
+tsx ./src/index.ts --openai_api_key=$1 --github_token=$2 --github_pr_id=$3
