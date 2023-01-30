@@ -2,7 +2,7 @@
 name: openai-code-review
 description: 'Integration of github actions with ChatGPT, aiming automated code reviews'
 inputs:
-  openai_key:
+  openai_api_key:
     description: 'OpenAI key'
     required: true
     default: ''
