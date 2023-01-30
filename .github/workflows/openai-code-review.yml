@@ -27,7 +27,14 @@ on:
     branches: ["*"]
 permissions: write-all
 jobs:
-  CRv:
+  hello_world_job:
     runs-on: ubuntu-latest
+    name: ChatGTP explain code
     steps:
-      - uses: cirolini/chatgpt-github-actions@v1
+      - name: ChatGTP explain code
+        uses: cirolini/chatgpt-github-actions@v1
+        with:
+          openai_api_key: ${{ secrets.openai_api_key }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_pr_id: ${{ github.event.number }}
+      
