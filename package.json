@@ -4,7 +4,7 @@
   "description": "Integration of chatGPT and github actions",
   "main": "./dist/index.mjs",
   "scripts": {
-    "build": "tsup index.ts --format esm,cjs --dts"
+    "build": "tsup index.ts --format esm,cjs"
   },
   "keywords": [],
   "author": "",
