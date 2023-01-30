@@ -4,4 +4,5 @@ COPY package.json /package.json
 COPY package-lock.json /package-lock.json
 RUN npm install 
 COPY index.ts /index.ts
-ENTRYPOINT ["/script.sh"]
+COPY script.sh /script.sh
+CMD ["/script.sh"]
