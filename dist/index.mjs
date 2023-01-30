@@ -2,6 +2,8 @@
 import { Configuration, OpenAIApi } from "openai";
 import { ArgumentParser } from "argparse";
 import { Octokit } from "@octokit/rest";
+import * as dotenv from "dotenv";
+dotenv.config();
 async function main() {
   const prompt = (code) => `explain and give suggestions about this code: ${code}`;
   const { add_argument, parse_args } = new ArgumentParser();
