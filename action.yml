@@ -18,6 +18,6 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.openai_key }}
-    - ${{ inputs.gh_token }}
-    - ${{ inputs.gh_pr_id }}
+    - ${{ inputs.openai_api_key }}
+    - ${{ inputs.github_token }}
+    - ${{ inputs.github_pr_id }}

@@ -6,9 +6,9 @@ async function main() {
   const prompt = (code: string) => `explain and give suggestions about this code: ${code}`;
 
   const { add_argument, parse_args } = new ArgumentParser();
-  add_argument('--openai_key');
-  add_argument('--gh_token');
-  add_argument('--gh_pr_id'); 
+  add_argument('--openai_api_key');
+  add_argument('--github_token');
+  add_argument('--github_pr_id'); 
   const params = parse_args();
 
   const octokit = new Octokit();
