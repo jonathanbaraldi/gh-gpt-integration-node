@@ -22,12 +22,11 @@
 #       - run: echo "🍏 This job's status is ${{ job.status }}."
 
 name: Code Review with ChatGPT
-on: [push]
-permissions:
-  contents: write
-  pull-requests: write
-  metadata: write
-uses: cirolini/chatgpt-github-actions@v1
+on:
+  push:
+    branches: ["*"]
 jobs:
   CR:
-    
+    runs-on: ubuntu-latest
+    steps:
+      - uses: cirolini/chatgpt-github-actions@v1
