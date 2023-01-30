@@ -41,7 +41,7 @@ async function main() {
         const content = Buffer.from(response.data.toString(), 'base64');
 
         const openAIConfig = new Configuration({
-          apiKey: params.open_ai_key,
+          apiKey: params.openai_api_key,
         });
     
         const { createCompletion } = new OpenAIApi(openAIConfig);
