@@ -17,6 +17,6 @@ const openai = new OpenAIApi(configuration);
 openai.createCompletion({
   model: "text-davinci-003",
   prompt,
-  max_tokens: 2048,
+  max_tokens: 2047,
 })
 .then((res) => console.log(res.data.choices[0].text));
