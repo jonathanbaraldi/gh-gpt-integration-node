@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 WORKDIR /app
-COPY package* .
+COPY package* /.
 RUN npm install
 COPY . .
 COPY index.ts /app/index.ts
