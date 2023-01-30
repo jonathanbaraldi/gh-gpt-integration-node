@@ -1,9 +1,7 @@
 FROM node:16-alpine
 
-WORKDIR /app
-COPY package.json .
-COPY package-lock.json .
-RUN npm install
-COPY . .
-COPY index.ts .
-CMD ["/main.sh"]
+COPY package.json /package.json
+COPY package-lock.json /package-lock.json
+RUN npm install 
+COPY index.ts /index.ts
+ENTRYPOINT ["./main.sh"]
