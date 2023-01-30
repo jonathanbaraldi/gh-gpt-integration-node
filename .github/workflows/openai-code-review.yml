@@ -22,7 +22,7 @@
 #       - run: echo "🍏 This job's status is ${{ job.status }}."
 
 name: Code Review with ChatGPT
-  on: [push]
+on: [push]
 permissions:
   contents: write
   pull-requests: write
